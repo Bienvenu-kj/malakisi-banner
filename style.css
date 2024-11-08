@@ -184,10 +184,11 @@ button.sans-a-p{
         overflow-wrap: break-word;
     }
     main p{
-        margin-left: 2rem;
-        margin-right: 2rem;
         font-size: 1rem;
     } 
+    img{
+        width : 100%;
+    }
     main h2{
          font-size: 2rem; 
     }
