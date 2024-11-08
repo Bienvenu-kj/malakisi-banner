@@ -1,0 +1,196 @@
+:root{
+    --princ-col : #E48E7A;
+    --header-bord-col : #dcdcdcff;
+    --princ-bg-color: #ffffff;
+}
+
+/* Style générale */
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight : 400;
+}
+
+/* Style body */
+body{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* fin Style body */
+
+header h1{
+    position: relative;
+    font-size: 1.5rem;
+}
+header h1::after{
+    content: '';
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    right: -0.7rem;
+    bottom: 0.4rem;
+    background-color: var(--princ-col);
+}
+main h2{
+    color: var(--princ-col);
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight:700;
+    /* width: 96%; */
+}
+main p{
+    font-size: 1.38rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    /* width: 96%; */
+}
+
+.bouton{
+    display: flex;
+    column-gap: 0.8rem;
+}
+.bouton button{
+    padding : 0.5rem;
+    background-color: var(--princ-col);
+    border: none;
+    color : #ffffff;
+    font-weight: 500;
+}
+
+button.sans-a-p{
+    color : black;
+    background: transparent;
+    border: solid black 0.12rem;
+}
+
+
+/* fin Style générale */
+
+
+/* Style contenu principale */
+
+    /* syle du contenur principale*/
+    #conteneur{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+        margin: 0 auto;
+        width: 68%;
+        height: 100vh;
+        /* border: 0.5rem solid var(--header-bord-col); */
+    }
+    /* fin style du conteneur principale */
+
+
+
+
+        /* style header */
+        header{
+            display: flex;
+            border-bottom: 0.1rem solid var(--header-bord-col);
+            justify-content: space-between;
+            padding-bottom: 0.4rem;
+            padding-top: 0.4rem;
+        }
+        /* fin style header */
+
+
+            /* style navbar */
+            nav{
+                align-self: center;
+                transition: 0.6s;
+            }
+            /* fin Style navbar */
+
+                /* style navbar Items */
+                header ul{
+                    display: flex;
+                    column-gap: 2.5rem;
+                    list-style: none;
+                }
+                /* fin Style navbar Items */
+                    /* style liens */
+                    header ul a{
+                        color : black;
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+
+        
+        /*style main  */
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            align-items: center;
+        }
+        /* fin style main */
+
+            /* style de la parties basse du menu  */
+            .bas{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            /* fin style de la partie basse du main */
+
+            /* style de l'image de la partie main */
+
+            img{
+                width : 25rem;
+            }
+
+            /* fin style de l'image de la partie main */
+/* fin Style contenu principale */
+
+
+/* Responsive Design*/
+
+@media (min-width:980px) and (max-width:1000px) {
+    #conteneur{
+        width : 75%;
+    }
+}
+
+@media (max-width : 979px) {
+    nav{
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width:580px) {
+    #conteneur{
+        width : 75%;
+    }
+}
+
+@media (max-width:480px) {
+    #conteneur{
+        width : 100%;
+    }
+
+    header, main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .bas{
+        overflow-wrap: break-word;
+    }
+    main p{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1rem;
+    } 
+    main h2{
+         font-size: 2rem; 
+    }
+    main .bouton button{
+        padding : 0.5rem 0.9rem;
+    }
+}
