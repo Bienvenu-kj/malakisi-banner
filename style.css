@@ -37,7 +37,7 @@ header h1::after{
 }
 main h2{
     color: var(--princ-col);
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
     font-family: 'Roboto';
     font-weight:700;
@@ -173,6 +173,7 @@ button.sans-a-p{
 @media (max-width:480px) {
     #conteneur{
         width : 100%;
+        row-gap: 3.5rem;
     }
 
     header, main{
