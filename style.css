@@ -173,7 +173,7 @@ button.sans-a-p{
 @media (max-width:480px) {
     #conteneur{
         width : 100%;
-        row-gap: 3.5rem;
+        row-gap: 3rem;
     }
 
     header, main{
