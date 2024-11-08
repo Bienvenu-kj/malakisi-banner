@@ -173,12 +173,12 @@ button.sans-a-p{
 @media (max-width:480px) {
     #conteneur{
         width : 100%;
-        row-gap: 3rem;
+        row-gap: 2.8rem;
     }
 
     header, main{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     .bas{
         overflow-wrap: break-word;
