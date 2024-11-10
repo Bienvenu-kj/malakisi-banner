@@ -55,6 +55,7 @@ main p{
     column-gap: 0.8rem;
 }
 .bouton button{
+    transition : 0.3s;
     padding : 0.5rem;
     background-color: var(--princ-col);
     border: none;
@@ -66,6 +67,16 @@ button.sans-a-p{
     color : black;
     background: transparent;
     border: solid black 0.12rem;
+}
+button.avec-a-p:hover{
+    background : #C76F5D;
+}
+
+button.sans-a-p:hover{
+    color : #fff;
+    background : var(--princ-col);
+    border: solid var(--princ-col) 0.12rem;
+    box-shadow : 0 0 1rem var(--princ-col);
 }
 
 
