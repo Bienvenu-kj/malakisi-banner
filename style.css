@@ -35,6 +35,7 @@ header h1::after{
     bottom: 0.4rem;
     background-color: var(--princ-col);
 }
+
 main h2{
     color: var(--princ-col);
     font-size: 2.8rem;
@@ -130,7 +131,11 @@ button.sans-a-p:hover{
                         color : black;
                         text-decoration: none;
                         font-weight: 500;
+                        transition : 0.2s;
                     }
+                    header ul a:hover{
+                        color :  --princ-col : #E48E7A;
+                        }
 
         
         /*style main  */
